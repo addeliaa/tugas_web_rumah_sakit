@@ -1,0 +1,280 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdfa; /* ganti background putih jadi mint soft */
+}
+
+/* Header */
+header {
+    background-color: #0069d9;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-size: 24px;
+}
+nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section - Tanpa kotak abu, tulisan jelas */
+.hero {
+    background: url('https://images.unsplash.com/photo-1588776814546-ec7e25e58cd5') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00bfa6; /* GANTI WARNA PUTIH DENGAN TOSCA CERAH */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #444; /* Ubah dari warna terang ke abu gelap */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Tambah bayangan halus */
+}
+
+
+/* Pusatkan section seperti Pelayanan Kami */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto; /* agar paragraf berada di tengah */
+}
+
+
+/* Pusatkan section seperti Pelayanan Kami */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto; /* agar paragraf berada di tengah */
+}
+
+
+/* Pusatkan section seperti Pelayanan Kami */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto; /* agar paragraf berada di tengah */
+}
+
+
+/* Button */
+.cta-button a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.cta-button a:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+
+/* === Tim Medis Section === */
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0fdfa;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* Hover Effect */
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* === Galeri Rumah Sakit === */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.gallery-section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-caption {
+    margin-top: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.gallery-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+
+/* === Sambutan Pemilik === */
+.sambutan-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.sambutan-section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.sambutan-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.sambutan-container img.sambutan-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.sambutan-container p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+.section ul li {
+    font-size: 17px;
+    padding: 6px 0;
+    text-align: left;
+}
+.section ul li::before {
+    content: "✔️ ";
+    color: #28a745;
+    margin-right: 5px;
+}
+

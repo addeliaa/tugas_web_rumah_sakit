@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Beranda | CIPTA HOSPITAL</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-section {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .team-section h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .team-member {
+            width: 200px;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .team-member p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CIPTA HOSPITAL</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Selamat Datang di CIPTA HOSPITAL</h2>
+        <p>Rumah sakit modern dengan pelayanan profesional dan teknologi terkini.</p>
+    </section>
+      
+    
+    <section class="section">
+        <h3>Pelayanan Kami</h3>
+        <p>Kami menyediakan layanan kesehatan terbaik untuk Anda dan keluarga.</p>
+        <div class="cta-button">
+            <a href="layanan.html">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <!-- Bagian Tim Medis -->
+  
+    <section class="team-section">
+        <h3>Tim Medis Kami</h3>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="img/dokter1.jpeg" alt="Dokter 1">
+                <p>dr. Puyu Anggreni, Sp.PD</p>
+            </div>
+            <div class="team-member">
+                <img src="img/dokter2.jpeg" alt="Dokter 2">
+                <p>dr. Budi Rahmat, Sp.OG</p>
+            </div>
+            <div class="team-member">
+                <img src="img/dokter3.jpeg" alt="Dokter 3">
+                <p>dr. Eka Lestari, Sp.B</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Rumah Sakit -->
+    <section class="gallery-section">
+        <h3>Galeri Rumah Sakit</h3>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="img/lobirumahsakit.jpeg" alt="Lobi Rumah Sakit">
+                <p class="gallery-caption">Lobi Rumah Sakit</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/ruangkoridor.jpeg" alt="Koridor Rumah Sakit">
+                <p class="gallery-caption">Koridor</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/ruangperiksa.jpeg" alt="Ruang Pemeriksaan">
+                <p class="gallery-caption">Ruang Pemeriksaan</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/rawatinap.jpeg" alt="Rawat Inap">
+                <p class="gallery-caption">Ruang Rawat Inap</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!-- Sambutan Pemilik Rumah Sakit -->
+<section class="sambutan-section">
+    <h3>Sambutan dari Direktur CIPTA HOSPITAL</h3>
+    <div class="sambutan-container">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=200&q=80" alt="Direktur RS" class="sambutan-img">
+        <p>
+            Assalamu’alaikum Warahmatullahi Wabarakatuh,<br><br>
+            Selamat datang di website resmi <strong>CIPTA HOSPITAL</strong>. Sebagai direktur sekaligus pendiri rumah sakit ini, saya dengan bangga mempersembahkan layanan kesehatan terbaik bagi masyarakat. 
+            <br><br>
+            CIPTA HOSPITAL hadir dengan komitmen untuk memberikan pelayanan medis yang profesional, humanis, dan terjangkau bagi semua kalangan. Kami percaya bahwa setiap pasien berhak mendapatkan penanganan yang cepat, tepat, dan penuh empati.
+            <br><br>
+            Terima kasih atas kepercayaan Anda kepada kami. Semoga kehadiran CIPTA HOSPITAL dapat menjadi bagian dari perjalanan kesembuhan dan kesehatan Anda.
+            <br><br>
+            Hormat kami,<br>
+            <strong>dr. Cintya Pertiwi</strong><br>
+            Direktur Utama CIPTA HOSPITAL
+        </p>
+    </div>
+</section>
+
+    <footer>
+        &copy; 2025 CIPTA HOSPITAL. Semua Hak Dilindungi.
+    </footer>
+</body>
+</html>
